@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form Project</title>
+</head>
+<body>
+  <h1 id="title">Web Development Survey Form</h1>
+  <p id="description">This is a survey designed to find out about interest in web development. 
+    Thank you very much for your answers</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter your name (first and last name) <input type="text" id="name" name="name" placeholder="Jimmy Valencia Urbano" required></label>
+      <label for="email" id="email-label">Enter your email <input type="email" id="email" name="email" placeholder="jvalu90@gmail.com" required></label>
+      <label for="number" id="number-label">Age (optional) <input type="number" id="number" name="age" min="13" max="120" placeholder="31"></label>
+    </fieldset>
+    
+    <fieldset>
+      <label for="dropdown">What do you know about Web Development
+        <select name="know-development" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">I know nothing</option>
+          <option value="2">I know about programming languages</option>
+          <option value="3">I currently work in programming</option>
+          <option value="4">I am a Web Developer </option>
+        </select>
+      </label>
+
+      <p>Are you interesting in web development?</p>
+      <label><input type="radio" name="interest" class="inline" value="definitely"> Definitely</label>
+      <label><input type="radio" name="interest" class="inline" value="maybe"> Maybe</label>
+      <label><input type="radio" name="interest" class="inline" value="not-sure"> Not sure</label>
+
+      <p>What do you like about web development?</p>
+      <label><input type="checkbox" class="inline" value="front-end"> Front End</label>
+      <label><input type="checkbox" class="inline" value="back-end"> Back End</label>
+      <label><input type="checkbox" class="inline" value="data-visualization"> Data Visualization</label>
+      <label><input type="checkbox" class="inline" value="challenges"> Challenges</label>
+      <label><input type="checkbox" class="inline" value="comunity" > Open Source Community</label>
+      <label><input type="checkbox" class="inline" value="help-rooms"> Gitter help rooms</label>
+      <label><input type="checkbox" class="inline" value="videos"> Videos</label>
+      <label><input type="checkbox" class="inline" value="meetups"> City Meetups</label>
+    </fieldset>
+    <fieldset>
+      <label>Any comments or suggestions?
+        <textarea name="aditional-coments"cols="30" rows="10"></textarea>
+      </label>
+    </fieldset>
+
+    <button id="submit">Submit</button>
+  </form>  
+</body>
+</html>
